@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+
+<body>
+<h1>register</h1>
+
+<form method="POST">
+<p>
+    <label for="username">username: </label>
+    <input type="text" name="username">
+</p>
+<p>
+    <label for="password">password: </label>
+    <input type="password" name="password">
+</p>
+<p>
+    <label for="email">email: </label>
+    <input type="email" name="email">
+</p>
+<p>
+    <div class="g-recaptcha" data-sitekey="{{ pub_key }}" style="text-align: center; display: inline-block;"></div>
+
+</p>
+<p>
+    <input type="submit" value="Register">
+</p>
+
+</form>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+</body></html>

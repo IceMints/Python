@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><body>
+{% if current_user.is_authenticated %}
+<h1>{{ current_user.username }}, what do you wish to edit?</h1>
+{% endif %}
+
+<a href={{ url_for('profile', username=current_user.username) }}>
+    Back
+</a>
+
+<form method="POST">
+    <p>
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" value={{ current_user.firstName }}>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" value={{ current_user.lastName }}>
+    </p>
+    <p>
+        <label for="phone">Phone number: </label>
+        <input type="tel" name="phone" pattern="[0-9]{11}" value={{ current_user.phone }}>
+    </p>
+    <p>
+        <label for="email">email: </label>
+        <input type="email" name="email" value={{ current_user.email }}>
+    </p>
+
+ <p>
+    <input type="submit" value="Update">
+</p>

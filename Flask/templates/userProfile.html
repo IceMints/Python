@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><body>
+{% if current_user.is_authenticated %}
+<h1>welcome {{ current_user.username }}!</h1>
+{% endif %}
+
+<h2>User Profile: </h2>
+
+<a  href={{ url_for('edit') }}>
+    Edit Profile
+</a>
+
+<ul>
+    <li>Username: {{ current_user.username }}</li>
+    <li>Name: {{ current_user.firstName }} {{ current_user.lastName }}</li>
+    <li>Email: {{ current_user.email }}</li>
+    <li>Phone: (###) ###-{{ current_user.phone[-4:] }}</li>
+</ul>
+
+<p><a href={{ url_for('logout') }}>Logout</a></p>
+
+<style>
+#divsub {
+  display: none;
+}
+#divsample {
+    display:none;
+}
+#email:checked ~ #divsub {
+    display: block;
+}
+#divsample {
+    display: none;
+}
+#sms:checked ~ #divsample {
+    display:block;
+}
+
+</style>
+
+<hr>
+<form method=POST>
+
+
+    <legend>Select send method: </legend>
+  <input type=radio name=out_mesg checked=checked id=sms value=sms>SMS
+  <input type=radio name=out_mesg id=email value=email>E-mail
+
+    <p>
+        <div id=divsample>
+        <label for=to>To: </label>
+        <input type=tel name=to_recv_sms placeholder="12137771234" pattern="[0-9]{11}">6
+        </div>
+    </p>
+
+    <p> <div id=divsub>
+        <label for=to>To: </label>
+        <input type=text name=to_recv_email placeholder="sample@sample.com"></div>
+    </p>
+    <p> <div id=divsub>
+        <label for=subject>Subject: </label>
+        <input type=text name=subject></div>
+    </p>
+
+    <p>
+        Message:<br>
+<textarea name=textbox rows=4 cols=30 placeholder="Write your message" ></textarea>
+    </p>
+    <p>
+<input type=submit name=submit value=send>
+    </p>
+
+</form>
+</body>
+{{ sid }} <br>
+{{ status }}<br>
+{{ body }}<br>
+{{ headers }}
+</html>

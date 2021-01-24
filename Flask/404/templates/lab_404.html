@@ -1,0 +1,16 @@
+{% extends "lab_base.html" %}
+<!-- Exports header and navbar from base.html or any file you want-->
+{% block title %}Flasky - Page Not Found{% endblock %}
+
+
+{% block page_content %}
+<div class="page-header">
+    <h1><center>Woops, that page doesn't exist! (404)</center> </h1>
+	<p><div style="width:30;height:100%;padding-bottom:50%;position:relative; padding-left: 35%"><iframe src="{{ source }}" width="30%" height="100%" style="position:absolute" frameBorder="0" ></iframe></div></p>
+</div>
+
+<p><center>{{ moment(current_time, local = True).format('LLLL') }} (UTC).</center></p>
+<p><center>Local time: {{ moment(current_time).format('LLLL') }} {{ time_zone }}. </center></p>
+
+{% endblock %}
+

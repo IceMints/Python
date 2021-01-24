@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<form method=POST>
+    <p>
+    <label for=letter >Select a letter: </label>
+    <select name=letter id=letter>
+        {% for letter in alphabet_list %}
+        <option value={{ letter }}>{{ letter }}</option>
+        {% endfor %}
+    </select>
+    <input type=submit value=Search>
+    </p>
+</form>
+{% if result %}
+<table>
+    <tr>
+      <th>id</th>
+      <th>last name</th>
+      <th>first name</th>
+      <th>username</th>
+      <th>email</th>
+    </tr>
+    {% for i in result %}
+    <tr>
+      <td>{{ i.id }}</td>
+      <td>{{ i.lastName }}</td>
+      <td>{{ i.firstName }}</td>
+      <td>{{ i.username }}</td>
+      <td><a href=mailto:{{ i.email }}>{{ i.email }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>password</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in result %}
+        <tr>
+            <td>{{ i.username }}</td>
+            <td>{{ i.password }}</td>
+            <td>{{ i.email }}</td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</html>
