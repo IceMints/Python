@@ -18,16 +18,16 @@ Data Analysis will show:
   Drop columns that would not be used or NAN
  
 4) Data visualization
-  CLoropleth map
-  Bar-Chart
-  Boxplot with overlay Swarmplot
-  Swarmplot
-  Boxplot
-  Pearson Correlation Coefficient
-  Pivot Tables
-  Subplots with Kernal Density Estimate (KDE)
-  Distplot
-  Lmplot
+  Cloropleth map, 
+  Bar-Chart, 
+  Boxplot with overlay Swarmplot, 
+  Swarmplot, 
+  Boxplot, 
+  Pearson Correlation Coefficient,
+  Pivot Tables,
+  Subplots with Kernal Density Estimate (KDE),
+  Distplot,
+  Lmplot,
   joinplot with Pearson R value
   
   
