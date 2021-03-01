@@ -1,3 +1,9 @@
+https://challenges.mlh.io/challenges/7
+
+Instructions
+In this challenge, we'll ask you to locate a hidden "flag". To find it, you'll need to utilize your problem solving abilities and maybe a bit of code. The flag looks like: flag{some_text_here}. When you find it, you'll need to paste the whole flag in the text box in the header of this page.
+
+
 What are the optimal times to buy & sell fish?
 As you know, the Daily D'eel is a big-time deals site that sells aquariums and other fish supplies. 
 To do well as a business, the Daily D'eel team needs to buy inventory at a low price and sell it 
