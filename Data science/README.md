@@ -62,12 +62,12 @@ Data Analysis will show:
     may increase for all states as seen by the weak correlation in our Lmplot.
     
   Is unemployment changing over time?
-    The data shows a very siginificant change of unemployment rate over time.
+    The data shows a very siginificant change of unemployment rate over time. (p-value<0.001)
     
   Is there a difference in median household income between Coastal and Landlocked states?
     The data shows a moderate significance of median hosehold income between coastal and landlocked
-    states. From the data, there is a positive difference between them.
+    states. From the data, there is a positive difference between them. (p-value=0.024 using a 95% confidence level)
     
   Is there a difference in unemployment rate between Coastal and Landlocked states?
-    There is no significant difference in unemployment rates between coastal and landlocked states.
+    There is no significant difference in unemployment rates between coastal and landlocked states. (p-value=0.097)
   
