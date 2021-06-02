@@ -11,7 +11,7 @@ Data Analysis will show:
 1) Importing libraries
   numpy, pandas, matplotlib.pyplot, seaborn, plotly.graph_objs, scipy
   
-2) Importing data into jupyter
+2) Importing data into jupyter from
   Unemployment.xls and USA_Census_2010.csv
  
 3) Data Cleaning and Organization
