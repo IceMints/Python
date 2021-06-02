@@ -1,4 +1,4 @@
-Flask web project written at pythonanywhere.com.
+Flask web project written and hosted on pythonanywhere.com.
 
 Features include:
 
