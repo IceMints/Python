@@ -9,15 +9,19 @@ to compare the census with unemployment
 
 Data Analysis will show:
 1) Importing libraries
+
   numpy, pandas, matplotlib.pyplot, seaborn, plotly.graph_objs, scipy
   
 2) Importing data into jupyter from
+
   Unemployment.xls and USA_Census_2010.csv
  
 3) Data Cleaning and Organization
+
   Drop columns that would not be used or NAN
  
 4) Data visualization
+
   Cloropleth map, 
   Bar-Chart, 
   Boxplot with overlay Swarmplot, 
@@ -32,6 +36,7 @@ Data Analysis will show:
   
   
 5) Conclusion
+
   Which states have the highest and lowest unemployment rate in 2017?
     Alaska has the highest unemployment rate in 2017 with 7.0%.
     Hawaii has the lowest unemployment rate in 2017 with 2.4%.
