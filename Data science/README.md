@@ -7,7 +7,7 @@ US Census data from the Census Bureau
 Data sets were from: http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk
 to compare the census with unemployment
 
-Data Analysis will show:
+Data Analysis shows:
 1) Importing libraries
 
   numpy, pandas, matplotlib.pyplot, seaborn, plotly.graph_objs, scipy
